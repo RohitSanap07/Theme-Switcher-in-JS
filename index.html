@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theme Switcher</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body id="main-body">
     
+       
+    <div class="btn-container">
+        <button type="button" class="btn-toggle btn-light"  onclick="enableLight()" id="btn-toggle">
+            Day <img src="./sun.png" height="20px" width="25px"></button>
+
+
+
+            <button type="button" class="btn-toggle btn-dark" onclick="enableDark()" id="btn-toggle">
+                Night <img src="./moon.png" height="20px" width="25px"></button>
+    </div>
+
+    <script>
+   
+function enableDark(){
+    const mainBody = document.getElementById("main-body")
+    mainBody.classList.remove("bg-light")
+    mainBody.classList.add("bg-dark")
+
+    const toggleButton = document.getElementById("btn-toggle")
+    toggleButton.classList.remove("btn-light")
+    toggleButton.classList.add("btn-dark")
+
+}
+function enableLight(){
+    const mainBody = document.getElementById("main-body")
+    mainBody.classList.remove("bg-dark")
+    mainBody.classList.add("bg-light")
+
+    const toggleButton = document.getElementById("btn-toggle")
+    toggleButton.classList.remove("btn-dark")
+    toggleButton.classList.add("btn-light")
+
+}
+
+ </script>
 </body>
 </html>

@@ -1,0 +1,80 @@
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+.bulb-img{
+    height: 140px;
+    display: block;
+    margin: 10px auto;
+}
+
+.btn-container{
+    position: fixed;
+    right: 150px;
+    top: 100px;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btn-toggle{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 12px 28px;
+    width: 110px;
+    height: 80px;
+    cursor: pointer;
+    font-size: 21px;
+    border: none;
+    background-color: rgb(59, 239, 233);
+    border-radius: 3px;
+}
+
+.btn-toggle:hover{
+    background-color: rgb(74, 254, 71);
+    border-radius: 3px;
+}
+
+.heading{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.theme-selection{
+    height: 20px;
+    cursor: pointer;
+}
+
+.theme-container{
+    height: 60px;
+    width: 80px;
+    position: fixed;
+    right: 250px;
+    top: 150px;
+}
+
+.bg-dark{
+    background-color: rgb(35, 35, 35);
+    color: white;
+}
+
+.bg-light{
+    background-color: rgb(107, 244, 244);
+    color: rgb(0, 0, 0);
+}
+
+.btn-dark{
+    background-color: rgb(246, 249, 89);
+    color: rgb(2, 2, 2);
+}
+
+.btn-light{
+    background-color: rgb(4, 4, 4);
+    color: rgb(251, 249, 249);
+}
